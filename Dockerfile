@@ -8,5 +8,5 @@ RUN addgroup mock
 RUN adduser jenkins mock
 RUN echo 'en_US.UTF-8 UTF-8' > /etc/locale.gen
 RUN apt-get install locales
-RUN apt-get dist-upgrade
+RUN apt-get dist-upgrade -y
 USER jenkins
